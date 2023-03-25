@@ -25,12 +25,12 @@ const AboutUs = ({ info }) => {
             <Image src={info?.metadata?.picture?.imgix_url} layout='fill' objectFit='contain' alt='about_knife'  priority/>
           </div>
         </div>
-        <div className={styles.about_content_history}>
+        {/*<div className={styles.about_content_history}>
           <h1 className='headtext_cormorant'>{info?.metadata?.title}</h1>
           <LineBreak />
           <p className='opensans'>{info?.metadata?.title_intro}</p>
           <Button name='Know More' path='#gallery' />
-        </div>
+        </div>*/}
       </div>
     </div>
   );

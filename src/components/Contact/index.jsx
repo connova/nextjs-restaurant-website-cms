@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Form from './Form';
 import cn from 'classnames';
 
 import SubHeading from 'components/SubHeading';
@@ -16,6 +17,9 @@ const Contacts = ({ info }) => (
           <p className='opensans'>{info?.metadata?.intro}</p>
           <div className='app_wrapper_content'>
             <p className='opensans'>{info?.metadata?.details?.[1]?.intro}</p>
+          </div>
+          <div>
+            <Form />
           </div>
           <p className={cn(styles.contact_hours,'cormorant')}>{info?.metadata?.details?.[0]?.title}</p>
           <p className={cn(styles.contact_title,'opensans')}>{info?.metadata?.details?.[0]?.intro}</p>

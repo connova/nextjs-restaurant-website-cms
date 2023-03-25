@@ -12,7 +12,7 @@ import styles from './styles.module.scss';
 const Navbar = ({ navbarInfo }) => {
   const [toggleMenu, setToggleMenu] = useState(false);
   
-  const navbarItems = [navbarInfo?.metadata?.about, navbarInfo?.metadata?.contact, navbarInfo?.metadata?.home, navbarInfo?.metadata?.menu];
+  const navbarItems = [navbarInfo?.metadata?.about, navbarInfo?.metadata?.contact, navbarInfo?.metadata?.home];
 
   const handleToggle = () => {
     setToggleMenu( prev => !prev );
@@ -23,7 +23,7 @@ const Navbar = ({ navbarInfo }) => {
       <Link href='/#home' passHref>
         <div className={styles.navbar_logo}>
           <Image
-            src={navbarInfo?.metadata?.logo?.imgix_url || images?.gericht}
+            src={navbarInfo?.metadata?.logo?.imgix_url}
             layout='fill'
             objectFit='cover'
             alt='logo' />
@@ -38,12 +38,12 @@ const Navbar = ({ navbarInfo }) => {
           </li>
         ))}
       </ul>
-      <div className={styles.navbar_login}>
+      {/*<div className={styles.navbar_login}>
         <p className={cn(styles.menu_item,'opensans')}>
           <Link href='#contact' passHref>{navbarInfo?.metadata?.action || ''}</Link>
         </p>
-      </div>
-      <div className={styles.navbar_smallscreen}>
+        </div>*/}
+      {/*<div className={styles.navbar_smallscreen}>
         <GiHamburgerMenu className={styles.navbar_hamburger} onClick={handleToggle} />
         {toggleMenu && (
           <div className={cn(styles.navbar_smallscreen_overlay, 'slide_bottom', 'flex_center')}>
@@ -59,7 +59,7 @@ const Navbar = ({ navbarInfo }) => {
             </ul>
           </div>
         )}
-      </div>
+      </div>*/}
     </nav>
   );
 }

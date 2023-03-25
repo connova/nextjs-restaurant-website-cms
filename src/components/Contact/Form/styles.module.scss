@@ -1,0 +1,20 @@
+@import 'styles/variables';
+
+.form{
+    display: grid
+}
+//grid worked so far the best   
+//inline-flex is good too but probably not for mobile
+
+.first {
+    color: $color-golden; 
+}
+
+.last {
+    color: $color-golden; 
+
+}
+
+.email {
+    color: $color-golden; 
+}

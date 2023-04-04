@@ -1,7 +1,5 @@
 import Image from 'next/image';
 import cn from 'classnames';
-import SubHeading from 'components/SubHeading';
-
 import images from 'constants/images';
 
 import styles from './styles.module.scss';
@@ -21,7 +19,7 @@ const Introduction = ({ info }) => {
         </div>
     </div>
     <div className='app_wrapper_info'>
-      <SubHeading title={info?.metadata?.section} />
+      <h1>{info?.metadata?.section}</h1>
         <h1 className='headtext_cormorant'>{info?.metadata?.title}</h1>
         <div className={styles.intro_content}>
           <div className={styles.intro_content_quote}>

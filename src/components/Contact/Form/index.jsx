@@ -1,5 +1,6 @@
 import cn from 'classnames';
 import styles from './styles.module.scss';
+import Button from 'components/Button';
 
 const Form = () => {
 
@@ -7,16 +8,16 @@ const Form = () => {
 
         <form className={styles.form}/*action="/send-data-here"*/ method="post">
             
-            <label className={styles.first} for="first">First name:</label>
+            <label className={styles.first} htmlFor="first">First name:</label>
             <input className={styles.first} type="text" id="first" name="first" />
             <br />
-            <label className={styles.last} for="last">Last name:</label>
+            <label className={styles.last} htmlFor="last">Last name:</label>
             <input className={styles.last} type="text" id="last" name="last" />
             <br />
-            <label className={styles.email} for="email">Email:</label>
+            <label className={styles.email} htmlFor="email">Email:</label>
             <input className={styles.email} type="email" id="email" name="email" />
             <br />
-            <button type="submit">Submit</button>
+            <Button name='Join Waitlist' path='' />
         </form>
 
     )

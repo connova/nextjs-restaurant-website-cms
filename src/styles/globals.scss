@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 @import 'styles/variables';
 
 *,
@@ -82,30 +83,31 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
 }
 
-.cormorant {
+.monsterrat {
   font-family: $font-base;
-  color: $color-white;
-  font-weight: 700;
-  text-transform: capitalize;
-  font-feature-settings: "tnum" on, "lnum" on;
+  color: $color-black;
+  font-weight: 750;
+  //font-feature-settings: "tnum" on, "lnum" on;
   line-height: 26px;
   font-size: 20px;
+  text-transform: uppercase;
 }
 
 .opensans {
   font-family: $font-alt;
-  color: $color-white;
+  color: $color-black;
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 0.25px;
   text-transform: capitalize;
   line-height: 24px;
   font-size: 16px;
+  text-transform: uppercase;
 }
 
 .custom_button {
-  background-color: transparent;
+  background-color: $color-orange;
   font-family: $font-base;
-  color: $color-golden;
+  color: $color-black;
   font-weight: 500;
   letter-spacing: 1px;
   line-height: 24px;
@@ -115,15 +117,14 @@ body::-webkit-scrollbar-thumb {
   border: none;
   outline: none;
   cursor: pointer;
-  border-bottom: 1px solid $color-golden;
   text-align: center;
+  text-transform: uppercase;
 
   &:hover {
-    background-color: $color-crimson;
-    color: $color-black;
+    background-color: $color-black;
+    color: $color-orange;
     transform: scale(0.98);
     transition: .4s ease;
-    border-bottom: 1px solid transparent;
   }
 }
 
@@ -136,7 +137,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .app_bg {
-  background: url('../assets/bg.png') no-repeat center center fixed;
+  background: linear-gradient(to right,  #ffe0b3, $color-white);
   background-size: cover;
 }
 
@@ -175,7 +176,7 @@ body::-webkit-scrollbar-thumb {
       bottom: 0;
       left: 0;
       z-index: 1;
-      background: $color-golden no-repeat center;
+      background: $color-black no-repeat center;
     }
   
     &::after {
@@ -186,7 +187,7 @@ body::-webkit-scrollbar-thumb {
       top: 0;
       right: 0;
       z-index: 1;
-      background: $color-golden no-repeat center;
+      background: $color-orange no-repeat center;
     }
 }
 
@@ -197,10 +198,11 @@ body::-webkit-scrollbar-thumb {
 
 .headtext_cormorant {
   font-family: $font-base;
-  color: $color-golden;
-  line-height: 50px;
-  font-size: 46px;
-  text-transform: capitalize;
+  color: $color-orange;
+  line-height: 48px;
+  font-size: 35px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .spoon_img {

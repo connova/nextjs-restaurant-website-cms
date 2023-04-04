@@ -5,8 +5,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: $color-black;
-    padding: 0.3rem 2rem;
+    background:   #fff5e6;
+    padding: 0.75rem 2rem 1rem 2rem;
     max-height: 65px;
     position: fixed;
     top: 0;
@@ -27,7 +27,7 @@
 .navbar_links {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     list-style: none;
     cursor: pointer;
@@ -39,10 +39,10 @@
     border-bottom: 2px solid transparent;
 
     &:hover {
-        color: $color-golden;
+        color: $color-orange;
         transform: scale(0.98);
         transition: .3s ease;
-        border-bottom: 2px solid $color-golden;
+        border-bottom: 2px solid $color-orange;
     }
 }
 
@@ -87,7 +87,7 @@
 
 .navbar_smallscreen_overlay .overlay_close {
     font-size: 27px;
-    color: $color-golden;
+    color: $color-white;
     cursor: pointer;
 
     position: absolute;
@@ -102,7 +102,7 @@
 .navbar_smallscreen_links li {
     margin: 2rem;
     cursor: pointer;
-    color: $color-golden;
+    color: $color-white;
     font-size: 2rem;
     text-align: center;
     font-family: $font-base;

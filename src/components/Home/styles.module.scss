@@ -1,21 +1,23 @@
 @import 'styles/variables';
 
 .header {
-  background-color: $color-black;
+  background: linear-gradient(to right,  #ffe0b3, $color-white);
   display: flex;
   flex-wrap: wrap-reverse;
+  min-width: 100vw;
+  max-width: 100vw;
 
   .header_h1 {
     font-family: $font-base;
-    color: $color-golden;
-    font-weight: 700;
-    text-transform: capitalize;
-    line-height: 58px;
-    font-size: 48px;
+    color: $color-orange;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 48px;
+    font-size: 35px;
   }
 
   .header_p {
-    margin: 2rem 0;
+    margin: 1.5rem 0.25rem 1.5rem 0rem;
   }
 
   .header_img img {

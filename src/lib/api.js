@@ -1,3 +1,4 @@
+/*
 import Cosmic from 'cosmicjs';
 
 const BUCKET_SLUG = process.env.COSMIC_BUCKET_SLUG
@@ -29,3 +30,4 @@ export async function getDataFromBucket(preview) {
   const data = await bucket.getObjects(params)
   return data.objects
 }
+*/

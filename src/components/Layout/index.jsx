@@ -2,9 +2,9 @@ import Navbar from 'components/Navbar';
 
 import styles from './styles.module.scss';
 
-const Layout = ({children, navbar}) => (
+const Layout = ({children}) => (
     <main className={styles.layout}>
-      <Navbar navbarInfo={navbar} />
+      <Navbar />
       <section className={styles.container}>
         {children}
       </section>

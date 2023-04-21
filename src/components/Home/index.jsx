@@ -21,13 +21,13 @@ const Home = ( { info } ) => (
         <div className='app_wrapper_img'>
           <div className={cn(styles.wrapper_img, 'img_padding')} >
             <Image
-              src={info?.metadata?.picture?.imgix_url}
+              src='https://i.imgur.com/ejWJFN8.jpg'
               alt='header_img'
               objectFit='cover'
               width={450}
               height={500}
               priority
-              />
+            />
           </div>
         </div>
       </div>

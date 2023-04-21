@@ -14,13 +14,13 @@ const AboutUs = ({ info }) => {
       </div>*/}
       <div className={cn(styles.about_content, 'flex_center')}>
         <div className={styles.about_content_about}>
-          <h1 className='headtext_cormorant'>{info?.metadata?.about}</h1>
+          <h1 className='headtext_cormorant'>ABOUT US</h1>
           <p className='opensans'>BORN FROM THE PASSION OF TWO FRIENDS FOR EXPLORING DIFFERENT CULTURAL CUISINES, COOLFOODS ALLOWS HIGH-QUALITY CUISINES TO REACH FOODIES EVERYWHERE, EVEN THOSE FAR FROM THE VENDOR. WITH COOLFOODS, FOOD VENDORS CAN EXPAND PAST THEIR LOCALITY AND SHARE THEIR CULINARY CREATIONS WITH FOODIES ALL AROUND CANADA.</p>
           <Button name='Know More' path='#intro' />
         </div>
         <div className={cn(styles.about_content_knife, 'flex_center')}>
           <div className={styles.about_content_img}>
-            <Image src={info?.metadata?.picture?.imgix_url} layout='fill' objectFit='contain' alt='about_knife'  priority/>
+            <Image src='https://i.imgur.com/Re3dwo7.png' layout='fill' objectFit='contain' alt='about_knife'  priority/>
           </div>
         </div>
       </div>
